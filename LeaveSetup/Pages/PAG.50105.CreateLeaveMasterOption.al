@@ -1,4 +1,4 @@
-page 50010 "Leave Master Option"
+page 50105 "Leave Master Option"
 {
 
     PageType = Card;

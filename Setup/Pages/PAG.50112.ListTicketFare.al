@@ -1,20 +1,22 @@
-page 50006 "Ticket Fare Create"
+page 50112 "Ticket Fare List"
 {
 
-    PageType = Card;
-    SourceTable = "Ticket Fare";
+    PageType = List;
+    SourceTable = EVS_TicketFare;
     Caption = 'Ticket Fare';
+    ApplicationArea = All;
+    UsageCategory = Lists;
+    CardPageId = "Ticket Fare Create";
 
     layout
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
                 field(TicketFareID; TicketFareID)
                 {
                     ApplicationArea = All;
-
                 }
                 // field(FareClass; FareClass)
                 // {
@@ -23,19 +25,16 @@ page 50006 "Ticket Fare Create"
                 // field(FareType; FareType)
                 // {
                 //     ApplicationArea = All;
-
                 // }
+                field(FromCityID; FromCityID)
+                {
+                    ApplicationArea = All;
+                }
                 field(FromCountryID; FromCountryID)
                 {
                     ApplicationArea = All;
-                    TableRelation = "Country/Region";
-
                 }
                 field(FromStateID; FromStateID)
-                {
-                    ApplicationArea = All;
-                }
-                field(FromCityID; FromCityID)
                 {
                     ApplicationArea = All;
                 }
@@ -44,18 +43,15 @@ page 50006 "Ticket Fare Create"
                 {
                     ApplicationArea = All;
                 }
-
+                field(ToCityID; ToCityID)
+                {
+                    ApplicationArea = All;
+                }
                 field(ToCountryID; ToCountryID)
                 {
                     ApplicationArea = All;
-                    TableRelation = "Country/Region";
-
                 }
                 field(ToStateID; ToStateID)
-                {
-                    ApplicationArea = All;
-                }
-                field(ToCityID; ToCityID)
                 {
                     ApplicationArea = All;
                 }

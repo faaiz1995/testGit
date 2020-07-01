@@ -1,4 +1,4 @@
-page 50013 "Holiday Setup List"
+page 50103 "Holiday Setup List"
 {
 
     PageType = List;

@@ -1,4 +1,4 @@
-table 50003 EVS_LoanType
+table 50105 EVS_LoanType
 {
     Caption = 'EVS_LoanType';
     DataClassification = ToBeClassified;

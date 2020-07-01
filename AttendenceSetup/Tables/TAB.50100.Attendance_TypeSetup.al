@@ -1,4 +1,5 @@
-table 50008 "EVS_Holiday_Setup"
+//table 50006 EVS_Attendance_TypeSetup
+table 50100 EVS_Attendance_TypeSetup
 {
     DataClassification = ToBeClassified;
 
@@ -9,57 +10,48 @@ table 50008 "EVS_Holiday_Setup"
             DataClassification = ToBeClassified;
             AutoIncrement = true;
         }
-        field(2; Year; Integer)
+        field(2; TypeName; Text[1000])
         {
             DataClassification = ToBeClassified;
         }
-        field(3; HolidayDateFrom; DateTime)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(4; HolidayDateTo; DateTime)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(5; Description; Text[100])
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(6; Frequency; Text[100])
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(7; "Thursday"; Boolean)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(8; "Friday"; Boolean)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(9; "Saturday"; Boolean)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(10; "Sunday"; Boolean)
-        {
-            DataClassification = ToBeClassified;
-
-        }
-        field(11; CompanyID; Text[50])
+        field(3; PayrollCode; Text[10])
         {
             DataClassification = ToBeClassified;
         }
-        field(12; BranchID; Text[50])
+        field(4; Calculation; Text[1000])
         {
             DataClassification = ToBeClassified;
+        }
+        field(5; CalculationType; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = " ",Deduction,Addition;
+        }
+        field(6; TypeGroupName; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = " ",Leave,Delay,"Exit","Overtime Weekend","Overtime Workday","Overtime Holiday","Halfday";
+        }
+        field(7; CompanyID; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(8; ShowInAttendance; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(9; IsPaid; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(10; LeaveEncashment; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(11; AttendanceCategory; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = " ",Standard,MOL;
         }
     }
 

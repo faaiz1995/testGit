@@ -1,4 +1,4 @@
-page 50002 "Employee Leave Quota List"
+page 50108 "Employee Leave Quota List"
 {
     PageType = List;
     ApplicationArea = All;

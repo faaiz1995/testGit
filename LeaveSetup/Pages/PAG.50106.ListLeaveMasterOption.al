@@ -1,4 +1,4 @@
-page 50011 "Leave Master Option List"
+page 50106 "Leave Master Option List"
 {
 
     PageType = List;

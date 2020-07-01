@@ -1,4 +1,4 @@
-page 50000 "Company leave days (Quota)"
+page 50102 "Company leave days (Quota)"
 {
     PageType = List;
     ApplicationArea = All;

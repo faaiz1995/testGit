@@ -1,4 +1,4 @@
-page 50014 "Holiday Setup Create"
+page 50104 "Holiday Setup Create"
 {
 
     PageType = Card;

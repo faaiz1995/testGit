@@ -1,15 +1,14 @@
-table 50000 EVS_CompanyleavedaysQuota
+table 50103 EVS_EmployeeLeaveQuota
 {
     DataClassification = ToBeClassified;
-
     fields
     {
-        field(1; CompanyLeaveSetupID; Integer)
+        field(1; LeaveQuotaID; Integer)
         {
             DataClassification = ToBeClassified;
             AutoIncrement = true;
         }
-        field(2; CompanyID; Code[50])
+        field(2; EmployeeID; Code[50])
         {
             DataClassification = ToBeClassified;
 
@@ -17,42 +16,36 @@ table 50000 EVS_CompanyleavedaysQuota
         field(3; LeaveTypeID; Integer)
         {
             DataClassification = ToBeClassified;
-
         }
-        field(4; CompanyQuota; Integer)
+        field(11; LeaveTypeID_Name; Text[1000])
         {
             DataClassification = ToBeClassified;
         }
-        field(5; Gender; Option)
-        {
-            DataClassification = ToBeClassified;
-            OptionMembers = "All","Male","Female";
-        }
-        field(6; ServiceTenure; Code[50])
+        field(4; AnnualQuota; Integer)
         {
             DataClassification = ToBeClassified;
         }
-        field(7; ForServiceTenure; Boolean)
+        field(5; TransactionType; Code[50])
         {
             DataClassification = ToBeClassified;
         }
-        field(8; ServiceTenureQuota; Integer)
+        field(6; CompanyLeaves; Decimal)
         {
             DataClassification = ToBeClassified;
         }
-        field(9; ExcludeHolidays; Boolean)
+        field(7; EmployeeQuota; Integer)
         {
             DataClassification = ToBeClassified;
         }
-        field(10; LeaveStart; DateTime)
+        field(8; LeaveStart; DateTime)
         {
             DataClassification = ToBeClassified;
         }
-        field(11; LeaveEnd; Integer)
+        field(9; LeaveEnd; Integer)
         {
             DataClassification = ToBeClassified;
         }
-        field(12; YearCalc; Decimal)
+        field(10; YearCalc; Decimal)
         {
             FieldClass = FlowFilter;
             //CalcFormula = sum(DATE2DMY(LeaveStart,2))
@@ -61,33 +54,9 @@ table 50000 EVS_CompanyleavedaysQuota
 
     keys
     {
-        key(PK; CompanyLeaveSetupID)
+        key(PK; LeaveQuotaID)
         {
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }

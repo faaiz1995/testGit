@@ -1,4 +1,4 @@
-table 50005 "Ticket Fare"
+table 50106 "EVS_TicketFare"
 {
     DataClassification = ToBeClassified;
 

@@ -1,8 +1,6 @@
-page 50008 "Attendance and leave Policy"
+page 50101 "Attendance and leave Policy"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = EVS_Attendance_TypeSetup;
     CaptionML = ENU = 'Attendance and leave Policy';
 

@@ -1,4 +1,4 @@
-page 50001 "Employee Leave Quota"
+page 50107 "Employee Leave Quota"
 {
     PageType = Card;
     CaptionML = ENU = 'Employee Leave Quota';

@@ -1,4 +1,4 @@
-page 50003 "Loan Type Create"
+page 50109 "Loan Type Create"
 {
     PageType = Card;
     SourceTable = EVS_LoanType;

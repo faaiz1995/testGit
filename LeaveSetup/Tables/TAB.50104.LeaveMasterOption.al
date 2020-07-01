@@ -1,4 +1,4 @@
-table 50007 EVS_LeaveMasterOption
+table 50104 EVS_LeaveMasterOption
 {
 
     DataClassification = ToBeClassified;

@@ -1,4 +1,4 @@
-page 50015 "Attendance & leave Policy"
+page 50100 "Attendance & leave Policy"
 {
     PageType = List;
     ApplicationArea = All;
